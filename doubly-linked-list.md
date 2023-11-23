@@ -18,7 +18,7 @@
 
 This algorithm simply swaps the values of the first and last nodes of the doubly linked list. It does not involve updating any pointers or modifying the structure of the list.
 
-```
+```java
 public void swapFirstLast() {
         if (length < 2) {
             return;
@@ -61,7 +61,7 @@ public void swapFirstLast() {
         
     3.  Set tail to temporaryNode.
 
-```
+```java
 public void reverse() {
         if (length <=1) {
             return;
@@ -130,7 +130,7 @@ public void reverse() {
         
     -   Eventually, set  `head`  to  `dummyNode.next
 
-```
+```java
  public void swapPairs() {
         Node dummyNode = new Node(0);
         dummyNode.next = head;
