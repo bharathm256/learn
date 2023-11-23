@@ -110,7 +110,36 @@
      }
      ```
 
-2. **Breadth-First Search (BFS):**
+2. **Depth-First Search (DFS)):**
+   - **Problem:** Find Kth elements from the tree
+     ```java
+     public Integer kthSmallest(int k) {
+        ArrayList<Integer> result = new ArrayList<>();
+        
+        class Traverse {
+            Traverse(Node currentNode) {
+                if(currentNode.left != null) {
+                    new Traverse(currentNode.left);
+                }
+                 if (currentNode != null) result.add(currentNode.value);
+                
+                if (currentNode.right != null) {
+                    new Traverse(currentNode.right);
+                }
+                
+            }
+        }
+        new Traverse(root);
+        
+        if(k <= 0 || k > result.size()) {
+            return null;
+        } else {
+            return result.get(k-1);
+        }
+    }
+     ```
+
+ 3. **Breadth-First Search (BFS):**
    - **Problem:** Level Order Traversal
      ```java
      List<List<Integer>> levelOrder(TreeNode root) {
