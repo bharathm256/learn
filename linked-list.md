@@ -15,7 +15,7 @@
     
 This algorithm uses the slow and fast pointer technique, also known as **Floyd's Tortoise and Hare algorithm**, to find the middle element of the linked list.
 
-```
+```java
 public  Node findMiddleNode()  {
   Node slow = head;
   Node fast = head;
@@ -47,7 +47,7 @@ public  Node findMiddleNode()  {
 
 This algorithm uses the slow and fast pointer technique (also known as Floyd's Tortoise and Hare algorithm) to efficiently detect the presence of a loop in the linked list.
 
-```
+```java
 public boolean hasLoop() {
         if (length == 1) {
             return false;
@@ -84,7 +84,7 @@ Pseudo Code:
  
 This algorithm uses the two-pointer technique to efficiently find the k-th node from the end of the linked list.
 
-  ```
+  ```java
   public Node findKthFromEnd(int k) {
         Node fast = head;
         Node slow = head;
@@ -131,7 +131,7 @@ This algorithm uses the two-pointer technique to efficiently find the k-th node 
 
 This algorithm uses two dummy nodes and two pointers to maintain two separate partitions of the original list, one containing nodes with values less than x, and the other containing nodes with values greater than or equal to x. It then concatenates the two partitions and updates the head of the list accordingly.
 
-```
+```java
  public void partitionList(int x) {
          if (head == null) return;
          
@@ -172,7 +172,8 @@ This algorithm uses two dummy nodes and two pointers to maintain two separate pa
 4.  When the while loop ends, all duplicate nodes will have been removed from the list.
 
 This algorithm uses a HashSet to keep track of unique values in the linked list and removes duplicates by updating the next pointers of the nodes as needed.
-```
+
+```java
     public void removeDuplicates() {
         
     if (head == null) return;
@@ -230,7 +231,7 @@ To find the decimal representation:
     
 5.  Return  `num`, which is  `5`.
 
-```
+```java
 public int binaryToDecimal() {
         int num = 0;
         Node current = head;
@@ -287,7 +288,7 @@ public int binaryToDecimal() {
         
     -   Set  `head`  to point to  `dummyNode.next`.
 
-```
+```java
 1.  public  void reverseBetween(int startIndex,  int endIndex)  {
 2.  if  (head ==  null)  return;
 
@@ -318,7 +319,7 @@ Given the `head` of a linked list, rotate the list to the right by `k` places.
 
 This is not the best solution according to leetCode, But something to start with.
 
-```
+```java
 /**
  * Definition for singly-linked list.
  * public class ListNode {
