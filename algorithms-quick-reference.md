@@ -111,7 +111,7 @@
      ```
 
 2. **Depth-First Search (DFS)):**
-   - **Problem:** Find Kth elements from the tree
+   - **Problem:** Find Kth smallest elements from the tree
      ```java
      public Integer kthSmallest(int k) {
         ArrayList<Integer> result = new ArrayList<>();
@@ -136,10 +136,10 @@
         } else {
             return result.get(k-1);
         }
-    }
+     }
      ```
-
- 3. **Breadth-First Search (BFS):**
+     
+ 4. **Breadth-First Search (BFS):**
    - **Problem:** Level Order Traversal
      ```java
      List<List<Integer>> levelOrder(TreeNode root) {
