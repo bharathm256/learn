@@ -2,7 +2,7 @@
 
 ## Bubble sort
 
-```
+```java
 public class BubbleSort {
 
     public static void bubbleSort(int[] array) {
@@ -39,7 +39,7 @@ public class BubbleSort {
 
 ## Selection sort
 
-```
+```java
 public class SelectionSort {
 
     public static void selectionSort(int[] array) {
@@ -83,7 +83,7 @@ public class SelectionSort {
 
 ## Insertion sort
 
-```
+```java
 public class InsertionSort {
 
     public static void insertionSort(int[] array) {
@@ -121,5 +121,3 @@ public class InsertionSort {
 
 
 ```
-
-## Merge sort
