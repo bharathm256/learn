@@ -360,4 +360,33 @@ All backtracking problems are composed by these three steps: choose, explore, un
             }
         }
         ```
-
+        
+2. **Backtracking:**
+   - **Problem:** Permutations
+        ```java
+        class Solution {
+          
+          List<String> result = new ArrayList<>();
+          
+          public List<String> find_permutation(String S) {
+            char[] input = S.toCharArray();
+              backtrace(result, "", input);
+              return result;
+              
+          }
+          
+          public void backtrace(List<String> result, String temp, char[] input) {    	
+             if(temp.length() == input.length) {
+                      result.add(temp);
+                  } 
+            
+            for(int i=0; i<input.length; i++) {
+                  if(temp.contains(input[i] + "")) continue;
+                  
+                  temp = temp + input[i];
+                  backtrace(result, temp, input);
+                  temp = temp.substring(0, temp.length()-1);
+            }
+          }
+      }
+        ```
